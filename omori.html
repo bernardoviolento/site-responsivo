@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Omori — Guia rápido</title>
+  <meta name="description"
+    content="Página informativa sobre o jogo indie Omori: sinopse, gameplay, personagens e trilha sonora.">
+
+  <style>
+    :root {
+      --bg: #0f1216;
+      --card: #0d1720;
+      --muted: #9fb4c6;
+      --accent: #f6b3c6;
+      --text: #e9f6fb;
+      --glass: rgba(255, 255, 255, 0.03);
+      --radius: 12px;
+      --maxw: 1000px;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #071017 0%, #08121b 100%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--maxw);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    header {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .cover {
+      width: 140px;
+      height: 140px;
+      border-radius: 12px;
+      background: var(--glass);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 18px;
+      margin-top: 8px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .sidebar .card+.card {
+      margin-top: 12px
+    }
+
+    h2 {
+      margin: 0 0 8px 0;
+      font-size: 16px
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0 0 10px 0
+    }
+
+    ul {
+      color: var(--muted);
+      margin: 6px 0 12px 18px
+    }
+
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 8px
+    }
+
+    .tag {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 6px 8px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    .buy-links a {
+      display: inline-block;
+      margin-right: 8px;
+      margin-top: 6px;
+      text-decoration: none;
+      color: inherit;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center
+    }
+
+    @media (max-width:900px) {
+      .content {
+        grid-template-columns: 1fr
+      }
+
+      .cover {
+        width: 110px;
+        height: 110px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="cover" aria-hidden="true">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxm2ELbzLbc6ajnfCWGRcA02xQlJIVqeHcdxIPhhARLkYe79XMcwdl4p64fcOQ1cwjHwaC_Ml4Ef4bk4FpPH1MSowwploQSefBfsM3cAEU"
+          alt="Capa do jogo Omori (substitua pela sua imagem)">
+      </div>
+      <div>
+        <h1>Omori</h1>
+        <div class="meta">RPG psicológico / Indie — Desenvolvido por OMOCAT</div>
+        <div class="tags" aria-hidden="true">
+          <span class="tag">RPG</span>
+          <span class="tag">Pixel Art</span>
+          <span class="tag">Narrativa</span>
+          <span class="tag">Horror psicológico</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <div>
+        <section class="card" aria-labelledby="sinopse">
+          <h2 id="sinopse">Sinopse</h2>
+          <p>
+            <strong>Omori</strong> conta a história de Omori e seus amigos num mundo surreal chamado "White Space", e
+            alterna entre sequências tranquilas e momentos sombrios que exploram temas como ansiedade, depressão e
+            memórias traumáticas. O jogador avança por cidades, masmorras e sonhos, descobrindo fragmentos do passado do
+            protagonista.
+          </p>
+        </section>
+
+        <section class="card" aria-labelledby="gameplay" style="margin-top:12px">
+          <h2 id="gameplay">Jogabilidade</h2>
+          <p>
+            Omori é um RPG no estilo clássico com combates por turnos que incluem mecânicas únicas, como o uso de
+            emoções (Happy / Sad / Angry / Scared) que alteram estatísticas e habilidades. Fora das batalhas, há
+            puzzles, exploração e interação com NPCs que enriquecem a narrativa.
+          </p>
+
+          <h3 style="margin-top:8px">Características principais</h3>
+          <ul>
+            <li>Combate por turnos com sistema de emoções;</li>
+            <li>Exploração 2D em pixel art com momentos de surrealismo;</li>
+            <li>História profunda com múltiplos finais dependendo de escolhas e descobertas;</li>
+            <li>Trilha sonora emocional e atmosférica.</li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="personagens" style="margin-top:12px">
+          <h2 id="personagens">Personagens</h2>
+          <p>
+            O jogo foca em Omori e seus amigos (por exemplo: Aubrey, Kel, Hero) — cada personagem tem personalidade
+            marcada e habilidades próprias em combate. Ao longo do jogo, o passado do protagonista e as relações entre o
+            grupo são gradualmente reveladas.
+          </p>
+        </section>
+
+        <section class="card" aria-labelledby="trilha" style="margin-top:12px">
+          <h2 id="trilha">Trilha sonora</h2>
+          <p>
+            A trilha sonora de Omori é amplamente elogiada por sua capacidade de transmitir emoções — alternando entre
+            temas calmos, nostálgicos e faixas tensas para momentos de horror psicológico.
+          </p>
+        </section>
+
+        <section class="card" aria-labelledby="recepcao" style="margin-top:12px">
+          <h2 id="recepcao">Recepção</h2>
+          <p>
+            Desde o lançamento, Omori conquistou uma comunidade fiel e recebeu elogios por sua história, trilha sonora e
+            direção de arte, embora seu conteúdo pesado (temas psicológicos) gere recomendações para jogadores sensíveis
+            ao assunto.
+          </p>
+        </section>
+      </div>
+
+
+      <aside class="sidebar">
+        <div class="card">
+          <h2>Ficha rápida</h2>
+          <ul>
+            <li><strong>Gênero:</strong> RPG / Horror psicológico</li>
+            <li><strong>Plataformas:</strong> PC (Steam), Nintendo Switch, PlayStation (verifique disponibilidade atual)
+            </li>
+            <li><strong>Desenvolvedor:</strong> OMOCAT</li>
+            <li><strong>Lançamento:</strong> 2020 (versão completa)</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h2>Onde comprar / jogar</h2>
+          <div class="buy-links">
+
+            <a href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxm2ELbzLbc6ajnfCWGRcA02xQlJIVqeHcdxIPhhARLkYe79XMcwdl4p64fcOQ1cwjHwaC_Ml4Ef4bk4FpPH1MSowwploQSefBfsM3cAEU"
+              target="_blank" rel="noopener">Steam</a>
+            <a href="https://www.nintendo.com" target="_blank" rel="noopener">Nintendo eShop</a>
+          </div>
+          <p style="margin-top:8px;color:var(--muted)">Verifique a página oficial ou a loja da sua plataforma para
+            disponibilidade e preço atualizado.</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h2>Trailer</h2>
+
+          <iframe width="300" height="230" src="https://www.youtube.com/embed/erzgjfU271g?si=aZKjfVEumcl2jpgg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>Observação: esta página é informativa. Para detalhes oficiais e assets (imagens, logos), consulte as páginas e
+        contas oficiais do jogo.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
